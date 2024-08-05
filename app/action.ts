@@ -11,5 +11,6 @@ export const action = (previousState: State, formData: FormData) => {
 
   if (name !== "John") return { errors: { name: "Enter 'John' to proceed" } };
 
+  // this throws error so I can't really return state here
   redirect("/");
 };
